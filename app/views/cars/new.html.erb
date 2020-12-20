@@ -1,0 +1,29 @@
+
+
+<center>
+
+  <div onload="lighten_func();">
+    <img class="clouds2_new " src="/assets/cloud.png" style="position:absolute;">
+  </div>
+
+  <div >
+    <img class="clouds3_new" src="/assets/cloud.png" style="position:absolute;">
+  </div>
+
+  <div class="container shield_container">
+    <img class="shield_new" src="/assets/shield-22871.png">
+    <div class="form_container form_new">
+      
+      <h1 style=" padding-left: 25px; padding-top:100px; padding-bottom:25px;">New Car</h1>
+      <%= render 'form', car: @car, submit_text: 'Register', exists: false %>
+      <%= link_to 'Back', cars_path, class: "h5 text-muted back_form"%>
+
+    </div>
+  </div>      
+
+  <div>
+    <img class="clouds4_new" src="/assets/cloud.png" style="position:absolute;">
+  </div>
+
+  </center>
+

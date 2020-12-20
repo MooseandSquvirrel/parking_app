@@ -1,0 +1,105 @@
+<div class="container-fluid d-flex" >
+    <div class="container">
+      <% if @cars.blank? %>
+
+        <div style="position:absolute;"
+
+          <div id="clouds5">
+            <img class="clouds5b " src="/assets/cloud.png" style="position:absolute;">
+          </div>
+
+          <div id="clouds">
+            <img class="cloudsb" src="/assets/cloud.png" style="position:absolute;">
+          </div>
+
+          <div id="clouds2">
+            <img class="clouds2b" src="/assets/cloud.png" style="position:absolute;">
+          </div>
+
+          <!-- <div id="sword">
+            <img class="sword" src="/assets/sword.png" style="position:absolute;">
+          </div> -->
+
+          <!-- <div id="mount">
+             <img class="mount" src="/assets/mount.png" style="position:absolute;">
+          </div> -->
+
+          <div id="clouds3">
+            <img class="clouds3b" src="/assets/cloud.png" style="position:absolute;">
+          </div>
+
+          <div id="clouds6">
+            <img class="clouds6b" src="/assets/cloud.png" style="position:absolute;">
+          </div>
+
+          <div id="clouds4">
+            <img class="clouds4b" src="/assets/cloud.png" style="position:absolute;">
+          </div>
+          <img id="storm" class="bolt_start" src="/assets/lightning.png">
+
+        </div>
+
+        <div class="container" style="padding-top:200px;">
+
+          <div id="container_helmet" class="container d-flex btn_background" onclick="my()" onmouseenter="darken_func()" >
+            <%= link_to '<button class="btn btn-warning" style="position: relative; "> Create New Car </button>'.html_safe, new_car_path %>
+          </div>
+
+        </div>
+
+        <script>
+          $( "button" ).click(function my() {
+            $("body").removeClass("evil").addClass("good") 
+          });
+        </script>
+
+      <% end %>
+
+      <% if not @cars.blank? %>
+
+        <div >
+          <img class="clouds7 " onload="" src="/assets/cloud.png" style="position:absolute;   z-index: -1;">
+        </div>
+
+        <div >
+          <img class="clouds8 " onload="" src="/assets/cloud.png" style="position:absolute;   z-index: -1;">
+        </div>
+
+      <div class="container">
+
+        <div class="container d-flex justify-content-center ">
+          <center><h1 style="color: white;"><span>Registered cars</span></h1>
+        </div>
+
+        <table class="table table-striped">
+          <thead style="background-color: #10A5F5;">
+            <tr class="text-white">
+              <th>Model</th>
+              <th>Year</th>
+              <th>Color</th>
+              <th>Licence plate</th>
+              <th colspan="3"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @cars.each do |car| %>
+              <tr>
+                <td><%= car.model %></td>
+                <td><%= car.year %></td>
+                <td><%= car.color %></td>
+                <td><%= car.licence_plate %></td>
+                <td><%= link_to 'Show', car, class: "btn btn-success btn-block" %></td>
+                <td><%= link_to 'Edit', edit_car_path(car), class: "btn btn-block btn-warning" %></td>
+                <td><%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-block btn-default btn-danger" %></td>
+              </tr>
+            <% end %>
+            </tbody>
+          </table>
+          
+      </div>
+
+      <% end %>
+
+    </div>
+    <br>
+</div>

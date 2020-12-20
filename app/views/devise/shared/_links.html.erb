@@ -1,0 +1,9 @@
+<%- if devise_mapping.omniauthable? %>
+  <%- resource_class.omniauth_providers.each do |provider| %>
+    <center>
+      <%= link_to image_tag('marvin.png', class: 'marvin_image'), root_path%><br />
+      <%= link_to "Sign in with Marvin", root_path, class: "h2" %><br />
+
+    </center>
+  <% end -%>
+<% end -%>

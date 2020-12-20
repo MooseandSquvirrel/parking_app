@@ -1,0 +1,39 @@
+// Place all the styles related to the Admin controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.search_bar {
+    margin-top: 20px;
+    margin-left: 30px;
+    max-width: 300px;
+    display: none;
+}
+
+.input_search{
+  font-size: 12px;
+  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+  min-width: 250px;
+}
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+	background: #ededed url(http://webdesignerwall.com/demo/expandable-search-form/images/search-icon.png) no-repeat 9px center;
+  border:solid 1px #ccc;
+  padding:9px 10px 9px 32px;
+  width:55px;
+  -webkit-border-radius:10em;
+  -mox-border-radius:10em;
+  border-radius:10em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+input[type=search]:focus{
+  width:130px;
+  outline:0;
+  background-color:#fff;
+  border-color:#6dcff6;
+  -webkit-box-shadow:0 0 5px rgba(109,207,246,.5);
+  -moz-box-shadow:0 0 5px rgba(109,207,246,.5);
+  box-shadow:0 0 5px rgba(109,207,246,.5);
+}

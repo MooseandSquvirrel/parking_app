@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Heimdall</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/assets/darken.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <style>
+      td {
+        font-family: Roboto;
+        font-size: 16px;
+      }
+    </style> 
+
+  </head>
+
+  <body>
+  
+    <video muted id="myVideo">
+      <source src="/assets/fight1.mp4" type="video/mp4">
+    </video>
+
+    <%= render "layouts/notice_and_alert" %>
+    <%= render "layouts/header" %>
+    <%= yield %>
+
+  </body>
+</html>

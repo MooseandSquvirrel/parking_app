@@ -1,0 +1,54 @@
+<div class="container text-center d-flex"  style="position: relative;">
+
+  <div class="shield_anim shield_anim2 ">
+    <img  src="/assets/shield.png" style="transform: translateX(-300px); position:absolute; height: 600px; z-index: -1;">
+  </div>
+
+  <div class="shield_anim_text1 glow_finish">
+    <h1 > Car of <%= @car.login %></h1>
+      <p>
+        <h3>
+          <strong>Model:</strong><br>
+          <%= @car.model %>
+        </h3>
+      </p>
+  </div>
+  <div class="shield_anim_text2">
+    <p>
+      <h3>
+        <strong>Year:</strong><br>
+        <%= @car.year %>
+      </h3>
+    </p>
+  </div>
+  <div class="shield_anim_text3">
+    <p>
+      <h3>
+        <strong>Color:</strong><br>
+        <%= @car.color %>
+      </h3>
+    </p>
+  </div>
+  <div class="shield_anim_text4">
+    <p>
+      <h3>
+        <strong>Licence plate:</strong><br>
+        <%= @car.licence_plate %>
+      </h3>
+    </p>
+    <%= render('edit_destroy_back') %>
+  </div>
+  
+</div>
+
+<div >
+  <img class="clouds9 " src="/assets/cloud.png" style="position:absolute;   z-index: -1;">
+</div>
+
+<div >
+  <img class="clouds7 " src="/assets/cloud.png" style="position:absolute;   z-index: -1;">
+</div>
+
+<div >
+  <img class="clouds8 " src="/assets/cloud.png" style="position:absolute;   z-index: -1;">
+</div>

@@ -1,0 +1,37 @@
+
+
+<div class="container d-flex">
+  <div class="row ">
+        
+          <%= form_with(model: car, local: true) do |form| %>
+
+            <%= hidden_field_tag "car[login]", exists ? "#{@car.login}" : "#{@user.login}"  %>
+
+            <div class="field">
+              <%= form.label :model, class: "h3_form" %><br>
+              <%= form.text_field :model, id: :car_model, class: "form-control mb-2  mb-sm-0" %>
+            </div>
+
+            <div class="field">
+              <%= form.label :year, class: "h3_form" %><br>
+              <%= form.number_field :year, id: :car_year, class: "form-control mb-2  mb-sm-0" %>
+            </div>
+
+            <div class="field">
+              <%= form.label :color, class: "h3_form" %><br>
+              <%= form.text_field :color, id: :car_color, class: "form-control mb-2  mb-sm-0" %>
+            </div>
+
+            <div class="field">
+              <%= form.label :licence_plate, class: "h3_form" %><br>
+              <%= form.text_field :licence_plate, id: :car_licence_plate, class: "form-control mb-2  mb-sm-0" %>
+            </div>
+
+            <div class="actions">
+              <%= form.button "<h3>#{submit_text}</h3>".html_safe, class: "btn btn-color btn-lg btn_form" %>
+            </div>
+
+          <% end %>
+
+  </div>
+</div>

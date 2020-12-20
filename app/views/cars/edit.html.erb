@@ -1,0 +1,20 @@
+
+<center><h1>Editing car of <%= @user.login %></h1>
+
+<div>
+    <img class="clouds2_new " src="/assets/cloud.png" style="position:absolute;">
+</div>
+
+<div >
+    <img class="clouds3_new" src="/assets/cloud.png" style="position:absolute;">
+</div>
+
+<%= render 'form', car: @car, submit_text: 'Apply', exists: true %>
+<%= link_to 'Back', cars_path, class: "h5 text-muted back_form"%>
+
+<div id="mount">
+    <img class="mount" src="/assets/mount.png" style="position:absolute;">
+</div>
+
+</center>
+

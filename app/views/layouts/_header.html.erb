@@ -1,0 +1,21 @@
+<div id="nav_bar" class="page-header">
+  <% if @user %>
+    <%= link_to image_tag('sword.png', class: 'logo_image', style: 'width:30px; height:50px;   transform: translate(20px, 10px);'), root_path %>
+    <% end %>
+  <div class="logo_block">
+    <%= link_to 'Heimdall', root_path, class: 'logo' %>
+  </div>
+    <div class="nav_link">
+      <%= link_to '<p>New</p>'.html_safe, new_car_path, class: 'sml_logo' %>
+    </div>
+    <div class="nav_link">
+      <%= link_to '<p>Registered</p>'.html_safe, root_path, class: 'sml_logo' %>
+    </div>
+    <% if @user %>
+      <div class="header_buttons">
+        <div id="nav_id" class="pull-right">
+          <%= link_to "Log out #{@user.login}", destroy_user_session_path, :method => :delete, :class=>"btn btn-sm btn-default btn-danger"%>
+        </div>
+    </div>
+  <% end %>
+</div>
