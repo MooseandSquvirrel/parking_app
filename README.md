@@ -100,7 +100,9 @@ This version has had it's authentication and database information removed and di
 The official desktop application was not meant for being open-sourced and therefore
 is not for use in it's full functionality to be reproduced locally. This is because of the permissions required including:
 staff/employee permissions, API scope and other necessary info not accessible to the public. The application's
-database, confidential information and files integral to its functioning have therefore been removed. 
+database, confidential information and files integral to its functioning have therefore been removed. If you clone
+the repo you will have to do **a lot** of modifications to get it to run locally as a viable application/fork. This
+is a demo of a portfolio piece.
 
 To see the demo, please visit: <a href="https://afternoon-ridge-28353.herokuapp.com/">Heimdall Demo</a>
 <br /><br /> 
