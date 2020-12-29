@@ -75,9 +75,11 @@
 ## About The Project
 ![gif of site 1](public/img_heimdall.png)
 
-This Rails desktop application was created as an internal tool by 42 Paris staff for 42 Silicon Valley staff and students to keep track of vehicles in the parking areas, and which vehicles are authorized to park there. It had an outdated backend with old data and a very sparse frontend design, both of which I was asked to update. I don't consider myself a designer but I very much enjoyed developing some fun css animations to go with the theme of a viking god for which the program was named, Heimdall.
+This Rails desktop application was created as an internal tool by 42 Paris staff for 42 Silicon Valley staff and students to keep track of vehicles in the parking areas, and which vehicles are authorized to park there. It had an outdated backend with old data and a very sparse frontend design, both of which I was asked to update. I don't consider myself a designer but I very much enjoyed developing a new GUI with some fun css animations to go with the theme of a viking god for which the program was named, Heimdall.
 
-This version has had it's authentication and database information removed and disconnected for demo purposes. It is a simple example of the process a user would experience registering their car(s) in the updated site after login.
+I also developed a script to clean up out-of-date data of old users from the Postgres database.
+
+This version has has it's authentication and database information removed and disconnected for demo purposes. It is a simple example of the process a user would experience registering their car(s) in the updated site after login.
 
 ### Original GUI:
 ![](public/old_heimdall_1.png)
